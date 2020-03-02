@@ -97,7 +97,6 @@ form:
         islands#lightBlueStretchyIcon: 'LightBlue'
         islands#oliveStretchyIcon: 'Olive'
 
-      
     header_section3:
       type: section
       title: PLUGIN_YMAP.CONTROLS_SETTINGS
@@ -165,3 +164,19 @@ form:
       options:
         routeButtonControl: PLUGIN_ADMIN.ENABLED
         0: PLUGIN_ADMIN.DISABLED
+
+    header_section4:
+      type: section
+      title: PLUGIN_YMAP.PLUGINCSS
+      underline: true
+
+    plugincss:
+      type: toggle
+      label: PLUGIN_YMAP.PLUGINADDCSS
+      hightlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

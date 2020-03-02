@@ -56,7 +56,9 @@ class YandexMapPlugin extends Plugin
         $coord = trim($this->config->get('plugins.yandex-map.coord'));
         $mapapi = 'https://api-maps.yandex.ru/2.1/?apikey='. $key .'&lang='. $lang .'';
         
-        $this->grav['assets']->addCss('plugin://yandex-map/css/yandex-map.css');
+        if ($this->config->get('plugins.yandex-map.plugincss')) {
+            $this->grav['assets']->addCss('plugin://yandex-map/css/yandex-map.css');
+        }
         
         $this->grav['assets']->addInlineJs('
             var coord = ['.$coord.']; 

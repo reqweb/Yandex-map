@@ -17,3 +17,5 @@ PLUGIN_YMAP:
   TYPE_SELECTOR: "Слои"
   FULLSCREEN_CONTROL:  "На весь экран"
   ROUTE_BUTTON_CONTROL: "Маршруты"
+  PLUGINCSS: "Файл css плагина"
+  PLUGINADDCSS: "Добавлять css файл плагина в head"
