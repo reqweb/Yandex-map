@@ -1,0 +1,167 @@
+name: Yandex Map
+version: 1.0.0
+description: "Yandex Map plugin for Grav cms"
+icon: yahoo
+author:
+  name: Reqweb
+  email: reqweb-dev@yandex.ru
+  url: http://reqweb.net
+homepage: 
+keywords: yandex, plugin, map
+bugs: 
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      hightlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    header_section1:
+      type: section
+      title: PLUGIN_YMAP.MAIN_SETTINGS
+      underline: true
+
+    key:
+      type: text
+      size: medium
+      label: PLUGIN_YMAP.API_KEY
+      placeholder: 'API key'
+      
+    coord:
+      type: text
+      size: medium
+      label: PLUGIN_YMAP.MAP_COORDINATES
+      placeholder: '59.931582, 30.360541'
+      help: Coordinates
+      
+    zoom:
+      type: text
+      size: small
+      label: PLUGIN_YMAP.MAP_ZOOM
+      placeholder: 'number'
+      help: Coordinates
+      default: 9
+      
+    lang:
+      type: text
+      size: small
+      label: PLUGIN_YMAP.MAP_LANG
+      placeholder: 'ru_RU'
+      default: 'ru_RU'
+      
+    header_section2:
+      type: section
+      title: PLUGIN_YMAP.MARKER_SETTINGS
+      underline: true
+      
+    mapiconcontent:
+      type: text
+      size: medium
+      label: PLUGIN_YMAP.ICON_CONTENT
+      placeholder: 'some text'
+      
+    maphintcontent:
+      type: text
+      size: medium
+      label: PLUGIN_YMAP.HINT_CONTENT
+      placeholder: 'hover text'
+      
+    markertype:
+      type: select
+      label: PLUGIN_YMAP.APPEARANCE_MARKER
+      size: medium
+      options:
+        islands#blueStretchyIcon: 'Blue'
+        islands#redStretchyIcon: 'Red'
+        islands#darkOrangeStretchyIcon: 'DarkOrange'
+        islands#nightStretchyIcon: 'Night'
+        islands#darkBlueStretchyIcon: 'DarkBlue'
+        islands#pinkStretchyIcon: 'Pink'
+        islands#grayStretchyIcon: 'Gray'
+        islands#brownStretchyIcon: 'Ibrown'
+        islands#darkGreenStretchyIcon: 'DarkGreen'
+        islands#violetStretchyIcon: 	'Violet'
+        islands#blackStretchyIcon: 'Black'
+        islands#yellowStretchyIcon: 'Yellow'
+        islands#greenStretchyIcon: 'Green'
+        islands#orangeStretchyIcon: 'Orange'
+        islands#lightBlueStretchyIcon: 'LightBlue'
+        islands#oliveStretchyIcon: 'Olive'
+
+      
+    header_section3:
+      type: section
+      title: PLUGIN_YMAP.CONTROLS_SETTINGS
+      underline: true
+
+    controls.traffic:
+      type: toggle
+      label: PLUGIN_YMAP.TRAFFIC_CONTROL
+      hightlight: 1
+      default: trafficControl
+      options:
+        trafficControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+
+    controls.geolocation:
+      type: toggle
+      label: PLUGIN_YMAP.GEOLOCATION_CONTROL
+      hightlight: 1
+      default: geolocationControl
+      options:
+        geolocationControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+        
+    controls.zoomcontrol:
+      type: toggle
+      label: PLUGIN_YMAP.ZOOM_CONTROL
+      hightlight: 1
+      default: zoomControl
+      options:
+        zoomControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+        
+    controls.searchcontrol:
+      type: toggle
+      label: PLUGIN_YMAP.SEARCH_CONTROL
+      hightlight: 1
+      default: searchControl
+      options:
+        searchControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+        
+    controls.typeselector:
+      type: toggle
+      label: PLUGIN_YMAP.TYPE_SELECTOR
+      hightlight: 1
+      default: typeSelector
+      options:
+        typeSelector: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+        
+    controls.fullscreencontrol:
+      type: toggle
+      label: PLUGIN_YMAP.FULLSCREEN_CONTROL
+      hightlight: 1
+      default: fullscreenControl
+      options:
+        fullscreenControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+        
+    controls.routebuttoncontrol:
+      type: toggle
+      label: PLUGIN_YMAP.ROUTE_BUTTON_CONTROL
+      hightlight: 1
+      default: routeButtonControl
+      options:
+        routeButtonControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
