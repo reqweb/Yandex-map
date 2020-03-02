@@ -5,7 +5,23 @@ If necessary, read the [documentation](https://tech.yandex.com/maps/jsapi/doc/2.
 You can get the API key here [Developer's Dashboard](https://developer.tech.yandex.ru/services/).
 
 The plugin adds in `<head></head>` JS script.  
-The second script, and inline JS adds in bottom part.
+The second script, and inline JS adds in bottom part.  
+
+### How to use
+
+Add to the page (in the template or in the markdown content) block `<div id="map"></div>`  
+The map will be placed in the block `#map`.  
+You can set the Css for #map yourself, but by default:
+```css
+/* yandex-map/css/yandex-map.css */
+
+#map{
+    width: 100%; 
+    height: 400px
+}
+```
+You can also disable the plugin's css in the settings.
+***
 
 Plugin settings:
 
@@ -26,6 +42,7 @@ controls:                                       # Settings elements on the map
   typeselector: typeSelector                    # on/off Type Selector
   fullscreencontrol: fullscreenControl          # on/off Fullscreen Control
   routebuttoncontrol: routeButtonControl        # on/off Route Button Control
+  plugincss: true                               # plugin's css
 ```
 
 All settings are available in the admin panel.
