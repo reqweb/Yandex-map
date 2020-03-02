@@ -6,9 +6,9 @@ author:
   name: Reqweb
   email: reqweb-dev@yandex.ru
   url: http://reqweb.net
-homepage: 
+homepage: https://github.com/reqweb/Yandex-map
 keywords: yandex, plugin, map
-bugs: 
+bugs: https://github.com/reqweb/Yandex-map/issues
 license: MIT
 
 form:
