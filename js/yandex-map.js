@@ -1,3 +1,5 @@
+if($("*").is("#map"))
+
 ymaps.ready(init);
 
 function init() {
