@@ -48,7 +48,6 @@ form:
       size: small
       label: PLUGIN_YMAP.MAP_ZOOM
       placeholder: 'number'
-      help: Coordinates
       default: 9
       
     lang:
@@ -165,9 +164,10 @@ form:
         routeButtonControl: PLUGIN_ADMIN.ENABLED
         0: PLUGIN_ADMIN.DISABLED
 
-    header_section4:
+    header_section5:
       type: section
-      title: PLUGIN_YMAP.PLUGINCSS
+      text: PLUGIN_YMAP.SECTION5DESCRIPTION
+      title: PLUGIN_YMAP.PLUGINWINDOWSIZE
       underline: true
 
     plugincss:
@@ -180,3 +180,16 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+
+    windowwidth:
+      type: text
+      size: small
+      label: PLUGIN_YMAP.PLUGINWINDOWWIDTH
+      help: "% or px"
+
+    windowheight:
+      type: text
+      size: small
+      label: PLUGIN_YMAP.PLUGINWINDOWHEIGHT
+      help: "% or px"
+      

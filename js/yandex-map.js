@@ -3,6 +3,7 @@ if($("*").is("#map"))
 ymaps.ready(init);
 
 function init() {
+    $("#map").css({'width':windowwidth, 'height':windowheight})
     var yandexMap = new ymaps.Map("map", {
             center: coord,
             zoom: zoom,

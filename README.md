@@ -11,16 +11,9 @@ The second script, and inline JS adds in bottom part.
 
 Add to the page (in the template or in the markdown content) block `<div id="map"></div>`  
 The map will be placed in the block `#map`.  
-You can set the Css for #map yourself, but by default:
-```css
-/* yandex-map/css/yandex-map.css */
+You can customize the css for #map yourself, but by default the width will be 100% and the height 400px.
 
-#map{
-    width: 100%; 
-    height: 400px
-}
-```
-You can also disable the plugin's css in the settings.
+You can also disable the addition of inline css (height and width) of the plugin in the settings.
 ***
 
 Plugin settings:
@@ -43,6 +36,8 @@ controls:                                       # Settings elements on the map
   fullscreencontrol: fullscreenControl          # on/off Fullscreen Control
   routebuttoncontrol: routeButtonControl        # on/off Route Button Control
   plugincss: true                               # plugin's css
+  windowwidth: 100%                             # width window
+  windowheight: 400px                           # height window
 ```
 
 All settings are available in the admin panel.

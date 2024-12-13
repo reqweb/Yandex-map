@@ -1,7 +1,15 @@
+# v1.2.1
+## 12/13/2024
+
+1. [](#new)
+    * It is now possible to adjust the width and height of the block from the admin panel
+1. [](#correction)
+    * Deleted yandex-map.css, by default, the height and width remained 100% and 400px
+
 # v1.1.1
 ## 03/27/2020
 
-1. [](#new)
+1. [](#bugfix)
     * Fixed the "id not found" error
 
 # v1.1.0
