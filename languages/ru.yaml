@@ -22,3 +22,4 @@ PLUGIN_YMAP:
   PLUGINWINDOWSIZE: "Размеры окна карты"
   PLUGINWINDOWWIDTH: "Ширина"
   PLUGINWINDOWHEIGHT: "Высота"
+  ZOOM_WHEEL_CTRL: "Масштабирование колесо мыши + ctrl"

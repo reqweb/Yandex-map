@@ -1,3 +1,9 @@
+# v1.3.0
+## 04/17/2026
+
+1. [](#new)
+    * Added switching of the map zoom option "wheel" - "wheel+ctrl"
+
 # v1.2.1
 ## 12/13/2024
 

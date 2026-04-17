@@ -1,5 +1,5 @@
 name: Yandex Map
-version: 1.0.0
+version: 1.3.0
 description: "Yandex Map plugin for Grav cms"
 icon: yahoo
 author:
@@ -162,6 +162,15 @@ form:
       default: routeButtonControl
       options:
         routeButtonControl: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+        
+    controls.zoomwheelctrl:
+      type: toggle
+      label: PLUGIN_YMAP.ZOOM_WHEEL_CTRL
+      hightlight: 1
+      default: 0
+      options:
+        zoomwheelctrl: PLUGIN_ADMIN.ENABLED
         0: PLUGIN_ADMIN.DISABLED
 
     header_section5:

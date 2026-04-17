@@ -53,6 +53,7 @@ class YandexMapPlugin extends Plugin
         $mapiconcontent = $this->config->get('plugins.yandex-map.mapiconcontent');
         $maphintcontent = $this->config->get('plugins.yandex-map.maphintcontent');
         $markertype = $this->config->get('plugins.yandex-map.markertype');
+        $zoomwheelctrl = $this->config->get('plugins.yandex-map.controls.zoomwheelctrl');
         $coord = trim($this->config->get('plugins.yandex-map.coord'));
         $mapapi = 'https://api-maps.yandex.ru/2.1/?apikey='. $key .'&lang='. $lang .'';
         
@@ -77,6 +78,7 @@ class YandexMapPlugin extends Plugin
             var iconcontent = "'. $mapiconcontent .'";
             var hintcontent = "'. $maphintcontent .'";
             var markertype = "'. $markertype .'";
+            var zoomwheelctrl = "'. $zoomwheelctrl .'";
             var controls = ['.$controls .']; 
         ', ['group' => 'bottom', 'position' => 'before']);
 

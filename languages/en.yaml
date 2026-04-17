@@ -21,3 +21,4 @@ PLUGIN_YMAP:
   PLUGINWINDOWSIZE: "Dimensions of the map window"
   PLUGINWINDOWWIDTH: "Width"
   PLUGINWINDOWHEIGHT: "Height"
+  ZOOM_WHEEL_CTRL: "Zoom for wheel + ctrl"

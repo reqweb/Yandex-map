@@ -35,6 +35,7 @@ controls:                                       # Settings elements on the map
   typeselector: typeSelector                    # on/off Type Selector
   fullscreencontrol: fullscreenControl          # on/off Fullscreen Control
   routebuttoncontrol: routeButtonControl        # on/off Route Button Control
+  zoomwheelctrl: 0                              # on/off option "wheel" - "wheel+ctrl"
   plugincss: true                               # plugin's css
   windowwidth: 100%                             # width window
   windowheight: 400px                           # height window
